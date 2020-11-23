@@ -27,8 +27,10 @@ const App = () => {
         "Poster": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
     }])
   return (
-    <div>
-      <MovieList movies={movies}/>
+    <div className="container-fluid movie-app">
+      <div className="row">
+        <MovieList movies={movies}/>
+      </div>
     </div>
   )
 }
