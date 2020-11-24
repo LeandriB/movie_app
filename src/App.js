@@ -51,7 +51,7 @@ const App = () => {
         <MovieList 
           movies={favorites} 
           handleClick={addMovie} 
-          FavoriteMovies={AddFavorites}
+          FavoriteMovies={RemoveFavorites}
         />
       </div>
     </div>
