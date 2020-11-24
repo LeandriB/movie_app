@@ -5,6 +5,7 @@ import MovieList from './components/MovieList'
 import Title from './components/Title';
 import SearchBar from './components/SearchBar';
 import AddFavorites from './components/AddFavorites';
+import RemoveFavorites from './components/RemoveFavorite'
 
 const App = () => {
   const [movies, setMovies] = useState([]);
