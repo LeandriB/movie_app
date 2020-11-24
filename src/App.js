@@ -26,9 +26,19 @@ const App = () => {
       getMovieRequest(searchValue);
     }, [searchValue]);
 
+    useEffect(() => {
+      const movieFavorites = JSON.parse(
+        localStorage.getItem('favorite-movies')
+      );
+
+      if (movieFavorites) {
+        setFavorites(movieFavorites);
+      }
+    }, [])
+
     const saveToLocalStorage = (items) => {
       localStorage.setItem('favorite-movies', JSON.stringify(items));
-    } 
+    }; 
 
     const addMovie = (movie) => {
       const favoritesList = [...favorites, movie]
@@ -41,7 +51,9 @@ const App = () => {
         (favorites) => favorites.imdbID !== movie.imdbID);
 
       setFavorites(favoritesList);
+      saveToLocalStorage(favoritesList);
     }
+
   return (
     <div className="container-fluid movie-app">
       <div className='row d-flex align-items-center mt-4 mb-4'>
