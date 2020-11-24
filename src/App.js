@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MovieList from './components/MovieList'
 import Title from './components/Title';
+import SearchBar from './components/SearchBar';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -23,8 +24,9 @@ const App = () => {
 
   return (
     <div className="container-fluid movie-app">
-      <div className='row'>
+      <div className='row d-flex align-items-center mt-4 mb-4'>
         <Title heading='Movies'/>
+        <SearchBar searchValue={searchValue} setSearchValue={setSearchValue}/>
       </div>
       <div className="row">
         <MovieList movies={movies}/>
