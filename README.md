@@ -34,7 +34,7 @@ Make sure that you are in project root directory and run ```npm start``` in orde
 
 ## Credit
 
-[Chris Blakely's](https://www.youtube.com/watch?v=jc9_Bqzy2YQ&feature=emb_logo) youtube channel for great videos on React projects
+[Chris Blakely's](https://www.youtube.com/watch?v=jc9_Bqzy2YQ&feature=emb_logo) youtube channel for an in depth explaination of this application.
 
 ## Attributions
 
